@@ -1,0 +1,152 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1.75fr 36px 1fr;
+}
+main {
+  background-color: #ff0400;
+  border: 10px solid #ff7400;
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+  gap: 2px;
+  padding: 2px;
+  color: #ff0400;
+}
+.white-box {
+  background-color: #ff0400;
+  display: grid;
+  grid-template-columns: 30px 2.8fr 1fr;
+  gap: 2px;
+  font-weight: 600;
+}
+.artist {
+  background-color: #ff7400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-size: 12px;
+}
+.title {
+  background-color: #ff7400;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  font-size: 70px;
+}
+.more div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button {
+  color: #ff7400;
+  background-color: #ff0400;
+  border: 0;
+  width: 90%;
+  height: 60%;
+  border-radius: 20px;
+  font-size: 12px;
+}
+.white-box:hover {
+  box-shadow: 0 0 0 2px white;
+  background-color: white;
+  color: white;
+}
+.white-box:hover .more {
+  background-color: white;
+}
+.white-box:hover button {
+  background-color: white;
+}
+
+.more {
+  background-color: #ff0400;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 2px;
+}
+.more-top {
+  background-color: #ff7400;
+  font-size: 12px;
+}
+.more-bottom {
+  background-color: #ff7400;
+}
+.divider {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  color: black;
+  font-size: 19px;
+  font-weight: 600;
+}
+.divider-top {
+  background-color: #ff00ff;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 10px;
+  writing-mode: vertical-rl;
+}
+.divider-bottom {
+  background-color: #1900ff;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 10px;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}
+section {
+  background-color: #ff0400;
+  display: grid;
+  grid-template-rows: 36px 1fr;
+  padding: 10px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  font-size: 19px;
+  font-weight: 600;
+}
+nav span {
+  display: flex;
+  align-items: baseline;
+}
+.circle {
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  border: 1px solid black;
+  margin-right: 2px;
+}
+span:last-child .circle {
+  background-color: black;
+}
+article {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 10px;
+  grid-template-rows: repeat(6, 1fr);
+}
+.art-news {
+  border-top: 2px solid black;
+  padding-top: 7px;
+}
+h3 {
+  font-size: 18px;
+  font-weight: 600;
+}
+p {
+  font-size: 11px;
+  font-weight: 600;
+}

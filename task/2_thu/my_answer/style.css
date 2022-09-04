@@ -1,0 +1,66 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  width: 100%;
+
+  display: grid;
+  grid-template-rows: 40px 1fr;
+  row-gap: 4px;
+
+  /* padding-top: 4px; */
+  border-top: 4px solid black;
+}
+nav,
+body,
+main {
+  background-color: black;
+}
+nav div,
+section {
+  background-color: white;
+}
+nav {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(min-content, 1fr));
+  column-gap: 4px;
+}
+nav div {
+  display: flex;
+  align-items: center;
+  padding-left: 12px;
+}
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-auto-rows: minmax(280px, 1fr);
+  gap: 4px;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding: 20px;
+}
+section div {
+  display: flex;
+  justify-content: space-between;
+}
+
+a {
+  color: black;
+}
+.photo {
+  align-self: center;
+  background-image: url("https://d32qe1r3a676y7.cloudfront.net/eyJidWNrZXQiOiJibG9nLWVjb3RyZWUiLCJrZXkiOiAiYmxvZy8wMDAxLzAxL2FkNDZkYmI0NDdjZDBlOWE2YWVlY2Q2NGNjMmJkMzMyYjBjYmNiNzkuanBlZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6IDkwMCwiaGVpZ2h0IjowLCJmaXQiOiJjb3ZlciJ9fX0=");
+  background-size: cover;
+  background-position: center;
+  width: 70%;
+  height: 70%;
+}
