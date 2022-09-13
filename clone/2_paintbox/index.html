@@ -5,7 +5,91 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="build/css/styles.css" />
   </head>
-  <body></body>
+  <body>
+    <nav>
+      <div class="nav-left">
+        <div><a href="#">NAIL STUDIO</a></div>
+        <div><a href="#">SHOP PRODUCT</a></div>
+      </div>
+      <div>
+        <a href="#"
+          ><img
+            src="data:image/png;base64,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"
+            alt=""
+        /></a>
+      </div>
+      <div class="nav-right">
+        <div><a href="#">JOURNAL</a></div>
+        <div>
+          <a href="#"><i class="fas fa-shopping-cart"></i>0</a>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <article>
+        <section class="main-content">
+          <h5>SS'22 POWER COUPLE</h5>
+          <h1>Meet your new favorite summer duo: Like Babe + Like Coral</h1>
+          <a class="btn" href="#">SHOP NOW</a>
+        </section>
+        <section class="sub-content">
+          <h2>
+            Meet your new go-to Tote Bag for summer. Neutral with holographic
+            foil lettering, it's the perfect modern accessory that goes with
+            everything.
+          </h2>
+          <a class="btn" href="#">SHOP NOW</a>
+        </section>
+        <section class="shop">
+          <h5>THE SHOP</h5>
+          <h2>Our Newest Polish Colors</h2>
+          <div class="cart box">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0086/4865/4895/products/babecoral-blobs-white_320x400_crop_center.png?v=1655256206"
+            />
+            <div class="label">
+              <h5>POWER COUPLE</h5>
+              <h2>Like French</h2>
+              <h5 class="price">$40.00</h5>
+              <a class="btn" href="#">ADD TO CART</a>
+            </div>
+          </div>
+        </section>
+        <section class="story">
+          <div class="picture"></div>
+          <div>
+            <h5>Aug 16, 2022</h5>
+            <h2>Nails of New York: Megan Graham</h2>
+            <a href="#" class="link"><h5>READ STORY</h5></a>
+          </div>
+          <div>
+            <h5>Aug 16, 2022</h5>
+            <h2>Nails of New York: Megan Graham</h2>
+            <a href="#" class="link"><h5>READ STORY</h5></a>
+          </div>
+          <div class="picture"></div>
+          <div class="picture"></div>
+          <div>
+            <h5>Aug 16, 2022</h5>
+            <h2>Nails of New York: Megan Graham</h2>
+            <a href="#" class="link"><h5>READ STORY</h5></a>
+          </div>
+        </section>
+        <section class="join">
+          <h5>JOIN OUT CONVERSATION</h5>
+          <h2>
+            Be the first to hear about new product launches and enjoy 15% off
+            your first polish order.
+          </h2>
+          <form>
+            <input type="text" placeholder="Enter Your Email" />
+            <button></button>
+          </form>
+        </section>
+      </article>
+    </main>
+  </body>
 </html>
