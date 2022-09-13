@@ -10,6 +10,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: white;
   img {
     width: 80px;
     height: 80px;
@@ -41,5 +42,72 @@ nav {
   }
 }
 main {
-  margin-top: 150px;
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  article {
+    width: 80%;
+    section {
+      margin-bottom: 80px;
+    }
+  }
+}
+.main-content,
+.sub-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 500px;
+  div {
+    background-color: #f3ede8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h1,
+    h2 {
+      margin-top: 40px;
+      margin-bottom: 70px;
+      font-size: 28px;
+      font-weight: 200;
+      width: 65%;
+      letter-spacing: 1px;
+      text-align: center;
+      line-height: 34px;
+    }
+    h5 {
+      font-size: 10px;
+      font-weight: 300;
+      letter-spacing: 1px;
+    }
+  }
+}
+.main-content {
+  .photo-box {
+    background-image: url("https://cdn.shopify.com/s/files/1/0086/4865/4895/files/Untitled-5_37d32faa-1124-4e55-8e66-a0698bc2f0e9_800x800_crop_center.jpg?v=1661907135");
+    background-position: center;
+    background-size: cover;
+  }
+}
+.sub-content {
+  .photo-box {
+    background-image: url("https://cdn.shopify.com/s/files/1/0086/4865/4895/files/Tote_Bag_800x800_crop_center.gif?v=1653663698");
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+.btn {
+  color: black;
+  font-size: 10px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-decoration: none;
+  border: 1px solid black;
+  width: 240px;
+  height: 54px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
