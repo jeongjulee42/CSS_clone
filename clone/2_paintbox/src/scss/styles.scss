@@ -164,3 +164,42 @@ main {
     }
   }
 }
+.story {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    background-color: #f3ede8;
+    background-position: center;
+    background-size: cover;
+  }
+  div:first-child {
+    background-image: url("https://cdn.shopify.com/s/files/1/0086/4865/4895/articles/blog-5_0.7x_ba407c52-06ea-4141-8f61-f3c444ed68e0_1440x970_crop_center.jpg?v=1660350661");
+  }
+  div:nth-child(4) {
+    background-image: url("https://cdn.shopify.com/s/files/1/0086/4865/4895/articles/custom_resized_04a3cee1-cc34-4413-94cb-0a6caacc2f14_1440x970_crop_center.jpg?v=1657901069");
+  }
+  div:nth-child(5) {
+    background-image: url("https://cdn.shopify.com/s/files/1/0086/4865/4895/articles/Blog-6_1b389472-42f0-415d-a488-7341e7a09e24_1440x970_crop_center.jpg?v=1655854156");
+  }
+  h5 {
+    font-size: 11px;
+    font-weight: 300;
+    letter-spacing: 2px;
+  }
+  h2 {
+    font-size: 30px;
+    font-weight: 200;
+    margin-top: 28px;
+    margin-bottom: 46px;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+  }
+}
