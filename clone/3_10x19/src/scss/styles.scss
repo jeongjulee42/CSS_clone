@@ -38,3 +38,15 @@ nav div:last-child,
 .photo {
   grid-row: 2 / span 5;
 }
+@keyframes flowText {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -100%;
+  }
+}
+.under div {
+  position: absolute;
+  animation: flowText 5s linear infinite;
+}
