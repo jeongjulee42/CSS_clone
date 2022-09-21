@@ -1,3 +1,8 @@
+@import "_mixins";
+
+* {
+  box-sizing: border-box;
+}
 body {
   height: 100vh;
   display: grid;
@@ -26,6 +31,7 @@ nav div {
   &:hover {
     background-color: #b37e3d;
     color: white;
+    cursor: pointer;
   }
 }
 nav div:last-child,
@@ -33,20 +39,22 @@ nav div:last-child,
   &:hover {
     background-color: white;
     color: #b37e3d;
+    cursor: default;
   }
 }
 .photo {
   grid-row: 2 / span 5;
 }
-@keyframes flowText {
-  0% {
-    left: 0;
-  }
-  100% {
-    left: -100%;
-  }
+.photo {
+  @include changeImage(
+    url("http://10x19.co/staging/wp-content/uploads/2019/12/Luor_10-768x768.jpg"),
+    url("http://10x19.co/staging/wp-content/uploads/2019/12/HolyokeHirsch_10-768x768.jpg"),
+    url("http://10x19.co/staging/wp-content/uploads/2019/12/Gallagher_10-768x768.jpg")
+  );
 }
-.under div {
-  position: absolute;
-  animation: flowText 5s linear infinite;
+.under {
+  div {
+    white-space: nowrap;
+    overflow: hidden;
+  }
 }

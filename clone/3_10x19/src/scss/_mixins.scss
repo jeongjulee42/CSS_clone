@@ -1,0 +1,25 @@
+@mixin changeImage($url1, $url2, $url3) {
+  @keyframes change {
+    0% {
+      background-image: $url1;
+      background-position: center;
+      background-size: cover;
+    }
+    33% {
+      background-image: $url2;
+      background-position: center;
+      background-size: cover;
+    }
+    66% {
+      background-image: $url3;
+      background-position: center;
+      background-size: cover;
+    }
+    100% {
+      background-image: $url1;
+      background-position: center;
+      background-size: cover;
+    }
+  }
+  animation: change 2s step-start infinite;
+}
