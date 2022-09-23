@@ -53,8 +53,19 @@ nav div:last-child,
   );
 }
 .under {
-  div {
-    white-space: nowrap;
-    overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  h1 {
+    animation: textMove 30s linear infinite;
+  }
+}
+
+@keyframes textMove {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
   }
 }
