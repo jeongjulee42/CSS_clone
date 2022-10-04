@@ -8,6 +8,7 @@ nav {
   column-gap: 20px;
   row-gap: 72px;
   width: 100%;
+  margin: 0 20px;
 }
 nav {
   background-color: white;
@@ -30,7 +31,6 @@ nav {
   }
 }
 .nav-left {
-  margin-left: 20px;
   font-weight: 600;
   span {
     color: rgb(129, 127, 127);
@@ -46,4 +46,54 @@ nav {
 .menu {
   display: flex;
   justify-content: space-between;
+  padding-right: 40px;
+}
+main {
+  margin-top: 4vh;
+  grid-template-rows: repeat(6, 50vh);
+  margin-bottom: 100px;
+}
+.no-contents {
+  grid-row: 1 / -1;
+}
+.text-card {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 0;
+  h1 {
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  p {
+    width: 90%;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 300;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    a {
+      color: #394f4c;
+      text-decoration: none;
+    }
+  }
+}
+.photo-card {
+  display: flex;
+  flex-direction: column;
+}
+.photo {
+  background-image: url("https://source.unsplash.com/random/");
+  background-size: cover;
+  background-position: center;
+  height: 45vh;
+  margin-bottom: 20px;
+}
+.photo-name {
+  color: #394f4c;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  line-height: 1.2;
 }
