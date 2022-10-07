@@ -78,47 +78,132 @@ main {
   justify-content: space-between;
 }
 .photo {
-  width: 50%;
-  height: 50%;
+  width: 74%;
+  height: 26vh;
+  margin-top: 6vh;
   background-size: cover;
   background-position: center;
-  &:first-child {
-    background-image: url("https://source.unsplash.com/random/1");
-  }
-  &:nth-child(2) {
-    background-image: url("https://source.unsplash.com/random/2");
-  }
-  &:nth-child(3) {
+  background-image: url("https://source.unsplash.com/random/1");
+}
+.half-photo:first-child {
+  background-color: randomColor();
+  & > div:first-child {
+    background-size: cover;
+    background-position: center;
     background-image: url("https://source.unsplash.com/random/3");
   }
-  &:nth-child(4) {
+}
+.half-photo:nth-child(2n) {
+  background-color: randomColor();
+  & > div:first-child {
+    background-size: cover;
+    background-position: center;
     background-image: url("https://source.unsplash.com/random/4");
   }
-  &:nth-child(5) {
+}
+.half-photo:nth-child(3n) {
+  background-color: randomColor();
+  & > div:first-child {
+    background-size: cover;
+    background-position: center;
     background-image: url("https://source.unsplash.com/random/5");
   }
-  &:nth-child(6) {
-    background-image: url("https://source.unsplash.com/random/6");
-  }
-  &:nth-child(7) {
+}
+.half-photo:nth-child(5n) {
+  background-color: randomColor();
+  & > div:first-child {
+    background-size: cover;
+    background-position: center;
     background-image: url("https://source.unsplash.com/random/7");
   }
-  &:nth-child(8) {
+}
+.half-photo:nth-child(7n) {
+  background-color: randomColor();
+  & > div:first-child {
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://source.unsplash.com/random/5");
+  }
+}
+.half-photo:nth-child(11n) {
+  background-color: randomColor();
+  & > div:first-child {
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://source.unsplash.com/random/6");
+  }
+}
+.half-photo:nth-child(13n) {
+  background-color: randomColor();
+  & > div:first-child {
+    background-size: cover;
+    background-position: center;
     background-image: url("https://source.unsplash.com/random/8");
   }
-  &:nth-child(9) {
-    background-image: url("https://source.unsplash.com/random/9");
+}
+.info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: 300;
+  margin-bottom: 4px;
+  div {
+    width: 30%;
+    text-align: center;
   }
-  &:nth-child(10) {
-    background-image: url("https://source.unsplash.com/random/10");
+}
+.full-photo {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-image: url("https://source.unsplash.com/random/2");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer {
+  width: 100%;
+  height: 21vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 6vh;
+  background-color: #f9f5f2;
+  button {
+    width: 174px;
+    height: 45px;
+    border-radius: 20px;
+    border: none;
+    font-size: 26px;
+    font-weight: 300;
+    background-color: #efe5d8;
+    &:hover {
+      background-color: $color1;
+    }
   }
-  &:nth-child(11) {
-    background-image: url("https://source.unsplash.com/random/11");
-  }
-  &:nth-child(12) {
-    background-image: url("https://source.unsplash.com/random/12");
-  }
-  &:nth-child(13) {
-    background-image: url("https://source.unsplash.com/random/13");
+  div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    div {
+      width: 10%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 14px;
+      margin-bottom: 6px;
+      a {
+        text-decoration: none;
+        color: black;
+        font-weight: 300;
+        margin-bottom: 6px;
+      }
+    }
   }
 }

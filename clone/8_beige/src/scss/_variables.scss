@@ -6,3 +6,26 @@ $color5: #5d8cce;
 $color6: #d4a335;
 $color7: #aaa65c;
 $color8: #abd296;
+
+@function randomColor() {
+  $num: 8 % random(7);
+  $color: $color8;
+  @if $num == 0 {
+    $color: $color8;
+  } @else if $num == 1 {
+    $color: $color1;
+  } @else if $num == 2 {
+    $color: $color2;
+  } @else if $num == 3 {
+    $color: $color3;
+  } @else if $num == 4 {
+    $color: $color4;
+  } @else if $num == 5 {
+    $color: $color5;
+  } @else if $num == 6 {
+    $color: $color6;
+  } @else if $num == 7 {
+    $color: $color7;
+  }
+  @return $color;
+}
