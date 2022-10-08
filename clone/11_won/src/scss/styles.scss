@@ -38,7 +38,6 @@ nav {
 }
 main {
   margin-top: 34px;
-  height: 300vh;
 }
 .main {
   width: 100%;
@@ -118,7 +117,7 @@ button {
 .sub-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(3, 100vh);
+  grid-template-rows: repeat(2, 100vh);
 }
 .sub-photo:first-child {
   background-image: url("https://source.unsplash.com/random/7");
@@ -130,6 +129,7 @@ button {
   background-position: center;
   background-size: cover;
 }
+
 .sub-photo:last-child {
   background-image: url("https://source.unsplash.com/random/9");
   background-position: center;
@@ -169,4 +169,15 @@ button {
       text-decoration: none;
     }
   }
+}
+.insta {
+  height: 250px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  div:hover {
+    background-color: gray;
+  }
+  margin-top: 110px;
+  margin-bottom: 76px;
 }
